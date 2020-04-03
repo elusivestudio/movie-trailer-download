@@ -29,7 +29,7 @@ do
 		subDirName=${subDir%*/}
 		echo $subDirName
 
-    # Download trailer
+		# Download trailer
 		if find . -iname '*trailer*' -printf 1 -quit | grep -q 1
 		then
 		    TRAILER_FILE_NAME=`find $subDirName -type f -iname "*trailer*"`
@@ -42,7 +42,7 @@ do
 		    NEW_TRAILER_FILE=`find . -type f -iname "*trailer*"`
 		    mv "${NEW_TRAILER_FILE##*/}" "${MOVIE_NAME%.*}-trailer.mkv"
 		fi
-
+		
 		cd ..
 	done
 	cd ..
