@@ -1,5 +1,5 @@
 # Trailer download script
-This is a script which scans your movie directory and download trailer using youtube-dl.
+This is a simple shell script which scans your movie directory and download trailer using youtube-dl.
 
 # Prerequisite
 Install youtube-dl
